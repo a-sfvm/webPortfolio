@@ -1,12 +1,13 @@
-import MainHeader from "./components/MainHeader";
+import MainInfo from "./components/MainInfo"
+
 import './App.css'
 
 function App() {
   return (
     <>
-    <MainHeader />
+    <MainInfo />
     </>
   )
 }
 
-export default App
+export default App;

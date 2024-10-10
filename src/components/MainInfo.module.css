@@ -1,0 +1,64 @@
+.container {
+  text-align: right;
+  height: 400px;
+  width: 500px;
+  position: sticky;
+  top: 6em;
+  line-height: 4em;
+}
+
+.title {
+  font-family: Fraunces;
+  font-weight: 900;
+  font-style: italic;
+  font-size: 4em;
+  margin: 0 0 0 1em;
+}
+
+.subtitle {
+  font-family: Afacad Flux;
+  font-family: 900;
+  font-size: 2.5em;
+  margin: 0 0;
+  display: inline-block;
+  border-right: 2px solid transparent; /* Caret effect */
+  white-space: nowrap; /* Prevent line breaks */
+  overflow: hidden; /* Hide text during typing effect */
+}
+
+/* Animation to delete and then type "<h3>Web Developer.</h3>" */
+.subtitle-deleting-typing {
+  animation: deleting 2s steps(14, end),      /* Delete "Web Developer." */
+             typing-phase-2 3s steps(23, end) 2s, /* Type "<h3>Web Developer.</h3>" */
+             blink-caret 0.75s step-end 8;
+}
+
+/* Deleting the initial text */
+@keyframes deleting {
+  from {
+    width: 14ch; /* Start from full width of "Web Developer." */
+  }
+  to {
+    width: 0;
+  }
+}
+
+/* Typing the second text "<h3>Web Developer.</h3>" */
+@keyframes typing-phase-2 {
+  from {
+    width: 0;
+  }
+  to {
+    width: 23ch; /* Number of characters in "<h3>Web Developer.</h3>" */
+  }
+}
+
+/* Blinking caret effect */
+@keyframes blink-caret {
+  from, to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: black;
+  }
+}
