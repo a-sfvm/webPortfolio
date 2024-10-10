@@ -3,7 +3,7 @@
   height: 400px;
   width: 500px;
   position: sticky;
-  top: 6em;
+  top: 8em;
   line-height: 4em;
 }
 
@@ -31,6 +31,14 @@
   animation: deleting 2s steps(14, end),      /* Delete "Web Developer." */
              typing-phase-2 3s steps(23, end) 2s, /* Type "<h3>Web Developer.</h3>" */
              blink-caret 0.75s step-end 8;
+}
+
+.socials {
+  margin-left: 5em;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
 }
 
 /* Deleting the initial text */

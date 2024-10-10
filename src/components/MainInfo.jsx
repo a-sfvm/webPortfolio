@@ -1,17 +1,20 @@
 import { useState, useEffect } from "react";
 
+import Resume from '../assets/Afonso-Melo-CV .pdf'
+
 import classes from "./MainInfo.module.css";
 import { FaGithub } from "react-icons/fa";
+import { FaLinkedin } from "react-icons/fa6";
 
 function MainInfo() {
   const [animate, setAnimate] = useState(false); // Track if the animation should start
-  const [text, setText] = useState("<h3>Web Developer.</h3>"); // Initial text
+  const [text, setText] = useState("<h2>Web Developer.</h2>"); // Initial text
 
   useEffect(() => {
     // Trigger the animation after 5 seconds
     const timer = setTimeout(() => {
       setAnimate(true); // Start the deleting and typing animation
-    }, 3000); // Wait for 5 seconds
+    }, 2000); // Wait for 5 seconds
 
     return () => clearTimeout(timer); // Cleanup in case component unmounts
   }, []);
@@ -34,8 +37,12 @@ function MainInfo() {
       <h3 className={`${classes.subtitle} ${animate ? classes['subtitle-deleting-typing'] : ''}`}>
         {text}
       </h3>
-      <div>
+      <div className={classes.socials}>
         <FaGithub />
+        <FaLinkedin />
+        <a href={Resume} download="Afonso-Melo-Resume" target='_blank'>
+          <button className={classes.navLink}>Resume</button>
+        </a>
       </div>
     </div>
     </>
