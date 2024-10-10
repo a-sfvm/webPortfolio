@@ -43,8 +43,10 @@
 a {
   text-decoration: none;
   padding: 0 0 0 0;
+  margin: 0 0 0 0;
   color: black;
   cursor: crosshair;
+  font-size: 1.5em;
 }
 
 .git {
@@ -57,7 +59,7 @@ a {
 
 @keyframes deleting {
   from {
-    width: 14ch;
+    width: 23ch;
   }
   to {
     width: 0;

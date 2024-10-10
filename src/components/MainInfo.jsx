@@ -42,7 +42,7 @@ function MainInfo() {
         <a href="https://www.linkedin.com/in/afonso-melo/" target="_blank">
           <FaLinkedin className={classes.linkedin}/>
         </a>
-        <a href={Resume} target='_blank'>
+        <a href={Resume} target='_blank' className={classes.resume}>
           Resume
         </a>
       </div>
