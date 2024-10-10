@@ -21,47 +21,59 @@
   font-size: 2.5em;
   margin: 0 0;
   display: inline-block;
-  border-right: 2px solid transparent; /* Caret effect */
-  white-space: nowrap; /* Prevent line breaks */
-  overflow: hidden; /* Hide text during typing effect */
+  border-right: 2px solid transparent;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
-/* Animation to delete and then type "<h3>Web Developer.</h3>" */
 .subtitle-deleting-typing {
-  animation: deleting 2s steps(14, end),      /* Delete "Web Developer." */
-             typing-phase-2 3s steps(23, end) 2s, /* Type "<h3>Web Developer.</h3>" */
+  animation: deleting 2s steps(14, end),
+             typing-phase-2 3s steps(23, end) 2s,
              blink-caret 0.75s step-end 8;
 }
 
 .socials {
-  margin-left: 5em;
+  margin-left: 15em;
   display: flex;
-  align-items: center;
+  align-items: stretch;
   justify-content: space-around;
 
 }
 
-/* Deleting the initial text */
+a {
+  text-decoration: none;
+  padding: 0 0 0 0;
+  color: black;
+  cursor: crosshair;
+}
+
+.git {
+  font-size: 1.5em;
+}
+
+.linkedin {
+  font-size: 1.5em;
+}
+
 @keyframes deleting {
   from {
-    width: 14ch; /* Start from full width of "Web Developer." */
+    width: 14ch;
   }
   to {
     width: 0;
   }
 }
 
-/* Typing the second text "<h3>Web Developer.</h3>" */
+
 @keyframes typing-phase-2 {
   from {
     width: 0;
   }
   to {
-    width: 23ch; /* Number of characters in "<h3>Web Developer.</h3>" */
+    width: 23ch;
   }
 }
 
-/* Blinking caret effect */
 @keyframes blink-caret {
   from, to {
     border-color: transparent;

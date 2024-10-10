@@ -7,26 +7,24 @@ import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa6";
 
 function MainInfo() {
-  const [animate, setAnimate] = useState(false); // Track if the animation should start
-  const [text, setText] = useState("<h2>Web Developer.</h2>"); // Initial text
+  const [animate, setAnimate] = useState(false);
+  const [text, setText] = useState("<h2>Web Developer.</h2>");
 
   useEffect(() => {
-    // Trigger the animation after 5 seconds
     const timer = setTimeout(() => {
-      setAnimate(true); // Start the deleting and typing animation
-    }, 2000); // Wait for 5 seconds
+      setAnimate(true);
+    }, 2000);
 
-    return () => clearTimeout(timer); // Cleanup in case component unmounts
+    return () => clearTimeout(timer);
   }, []);
 
-  // Handle text change after the deleting animation completes
   useEffect(() => {
     if (animate) {
       const textChangeTimer = setTimeout(() => {
-        setText("Web Developer."); // Change text after deleting
-      }, 2000); // Wait for 2 seconds (length of the deleting animation)
+        setText("Web Developer.");
+      }, 2000);
 
-      return () => clearTimeout(textChangeTimer); // Cleanup in case of unmount
+      return () => clearTimeout(textChangeTimer);
     }
   }, [animate]);
 
@@ -38,10 +36,14 @@ function MainInfo() {
         {text}
       </h3>
       <div className={classes.socials}>
-        <FaGithub />
-        <FaLinkedin />
-        <a href={Resume} download="Afonso-Melo-Resume" target='_blank'>
-          <button className={classes.navLink}>Resume</button>
+        <a href="https://github.com/a-sfvm" target='_blank'>
+          <FaGithub className={classes.git}/>
+        </a>
+        <a href="https://www.linkedin.com/in/afonso-melo/" target="_blank">
+          <FaLinkedin className={classes.linkedin}/>
+        </a>
+        <a href={Resume} target='_blank'>
+          Resume
         </a>
       </div>
     </div>
