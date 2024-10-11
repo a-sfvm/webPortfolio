@@ -1,7 +1,6 @@
 import { useState, useEffect } from "react";
 
-import Resume from '../assets/Afonso-Melo-CV .pdf'
-
+import Resume from '../assets/Afonso-Melo_CV.pdf'
 import classes from "./MainInfo.module.css";
 import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa6";
@@ -43,7 +42,7 @@ function MainInfo() {
           <FaLinkedin className={classes.linkedin}/>
         </a>
         <a href={Resume} target='_blank' className={classes.resume}>
-          Resume
+          resume
         </a>
       </div>
     </div>

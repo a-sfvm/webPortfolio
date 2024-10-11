@@ -1,6 +1,6 @@
 .container {
   text-align: right;
-  height: 400px;
+  height: 200px;
   width: 500px;
   position: sticky;
   top: 8em;
@@ -35,26 +35,56 @@
 .socials {
   margin-left: 15em;
   display: flex;
-  align-items: stretch;
-  justify-content: space-around;
-
+  align-items: center;
+  justify-content: flex-end;
+  line-height: normal;
 }
 
 a {
   text-decoration: none;
   padding: 0 0 0 0;
   margin: 0 0 0 0;
-  color: black;
+  color: rgb(76, 76, 76);
   cursor: crosshair;
-  font-size: 1.5em;
+  margin-left: 0.7em;
+}
+
+a:hover {
+  transition: .5s;
+}
+
+.resume {
+  font-family: Fraunces;
+  font-weight: 600;
+  font-style: italic;
+  border: 0.1em solid rgb(76, 76, 76);
+  border-radius: 5px;
+  padding: 0.2em 0.2em;
+  font-size: 1em;
+  margin-right: 0.2em;
+}
+
+.resume:hover {
+  color: rgb(255, 255, 255);
+  background-color: rgb(76, 76, 76);
 }
 
 .git {
-  font-size: 1.5em;
+  font-size: 1.7em;
+  margin-top: 0.15em;
+}
+
+.git:hover {
+  color: #EA4F31;
 }
 
 .linkedin {
-  font-size: 1.5em;
+  font-size: 1.7em;
+  margin-top: 0.15em;
+}
+
+.linkedin:hover {
+  color: #0866C2;
 }
 
 @keyframes deleting {
