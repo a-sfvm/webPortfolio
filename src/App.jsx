@@ -1,13 +1,13 @@
-import MainInfo from "./components/MainInfo"
-import PageSections from "./components/PageSections";
+import LayoutLeft from "./components/LayoutLeft";
+import LayoutRight from "./components/LayoutRight";
 
 import './App.css'
 
 function App() {
   return (
     <>
-    <MainInfo />
-    <PageSections />
+      <LayoutLeft />
+      <LayoutRight />
     </>
   )
 }

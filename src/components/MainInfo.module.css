@@ -1,7 +1,5 @@
 .container {
   text-align: right;
-  height: 200px;
-  width: 500px;
   position: sticky;
   top: 8em;
   line-height: 4em;
@@ -85,6 +83,11 @@ a:hover {
 
 .linkedin:hover {
   color: #0866C2;
+}
+
+.index {
+  line-height: 1.8em;
+  margin-top: 7em;
 }
 
 @keyframes deleting {

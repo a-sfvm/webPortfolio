@@ -5,7 +5,7 @@ import classes from "./MainInfo.module.css";
 import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa6";
 
-function MainInfo() {
+const MainInfo = () => {
   const [animate, setAnimate] = useState(false);
   const [text, setText] = useState("<h2>Web Developer.</h2>");
 
@@ -29,26 +29,28 @@ function MainInfo() {
 
   return (
     <>
-    <div className={classes.container}>
-      <h1 className={classes.title}>Afonso Melo</h1>
-      <h3 className={`${classes.subtitle} ${animate ? classes['subtitle-deleting-typing'] : ''}`}>
-        {text}
-      </h3>
-      <div className={classes.socials}>
-        <a href="https://github.com/a-sfvm" target='_blank'>
-          <FaGithub className={classes.git}/>
-        </a>
-        <a href="https://www.linkedin.com/in/afonso-melo/" target="_blank">
-          <FaLinkedin className={classes.linkedin}/>
-        </a>
-        <a href={Resume} target='_blank' className={classes.resume}>
-          resume
-        </a>
+      <div className={classes.container}>
+        <h1 className={classes.title}>Afonso Melo</h1>
+        <h3 className={`${classes.subtitle} ${animate ? classes['subtitle-deleting-typing'] : ''}`}>
+          {text}
+        </h3>
+        <div className={classes.socials}>
+          <a href="https://github.com/a-sfvm" target='_blank'>
+            <FaGithub className={classes.git}/>
+          </a>
+          <a href="https://www.linkedin.com/in/afonso-melo/" target="_blank">
+            <FaLinkedin className={classes.linkedin}/>
+          </a>
+          <a href={Resume} target='_blank' className={classes.resume}>
+            resume
+          </a>
+        </div>
+        <div className={classes.index}>
+          <p>About</p>
+          <p>Skills</p>
+          <p>Projects</p>
+        </div>
       </div>
-      <div>
-        <p></p>
-      </div>
-    </div>
     </>
   );
 }

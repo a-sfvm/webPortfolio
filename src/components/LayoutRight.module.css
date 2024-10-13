@@ -1,0 +1,11 @@
+.layoutright {
+  padding: 1em;
+}
+
+@media only screen and (min-width: 768px) {
+  /* show element on medium-sized screens */
+  .layoutright {
+    width: 300px;
+    height: 2000px;
+  }
+}
