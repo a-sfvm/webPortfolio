@@ -6,5 +6,5 @@
   max-width: 90vh;
   width: calc(100% - 500px);
   /* overflow-y: auto; */
-  height: 100vh;
+  /* height: 100vh; */
 }

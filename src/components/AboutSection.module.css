@@ -1,5 +1,29 @@
 .aboutcontainer {
-  /* text-align: justify; */
-  /* flex-grow: 1; */
   text-align: justify;
+}
+
+.title {
+  font-family: Afacad Flux;
+  font-weight: 700;
+  /* font-style: italic; */
+  /* padding-left: 1em; */
+  font-size: 1.5em;
+
+  /* border-bottom: 0.1em solid rgb(37, 37, 37); */
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  border-top: 0.1em solid rgb(37, 37, 37);
+  padding: 0.2em;
+}
+
+.pOne {
+  width: 500px;
+}
+
+.pTwo {
+  width: 500px;
+  align-self: flex-end;
 }

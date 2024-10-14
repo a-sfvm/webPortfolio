@@ -36,7 +36,7 @@ const MainInfo = () => {
   const onClickSkills = () => {
     // window.location.href = "#skills";
     const about = document.getElementById("skills");
-    about.scrollIntoView({ behavior: "smooth", block: "start", inline: "nearest" });
+    about.scrollIntoView({ behavior: "smooth", block: "center" });
   }
 
 
