@@ -1,5 +1,7 @@
 .layoutright {
   margin-left: 600px;
+  /* /* display: flex; */
+  /* flex-grow: 1; */
   padding: 8em 20px;
   max-width: 90vh;
   width: calc(100% - 500px);

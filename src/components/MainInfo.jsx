@@ -33,6 +33,12 @@ const MainInfo = () => {
     about.scrollIntoView({ behavior: "smooth", block: "start", inline: "nearest" });
   }
 
+  const onClickSkills = () => {
+    // window.location.href = "#skills";
+    const about = document.getElementById("skills");
+    about.scrollIntoView({ behavior: "smooth", block: "start", inline: "nearest" });
+  }
+
 
   return (
     <>
@@ -54,7 +60,7 @@ const MainInfo = () => {
         </div>
         <div className={classes.index}>
           <p onClick={onClickAbout}>About</p>
-          <p>Skills</p>
+          <p onClick={onClickSkills}>Skills</p>
           <p>Projects</p>
         </div>
       </div>
