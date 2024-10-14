@@ -1,7 +1,13 @@
 .container {
+  width: 500px;
+  height: 100vh;
   text-align: right;
-  position: sticky;
-  top: 8em;
+  position: fixed;
+  /* margin-top: 8em; */
+  left: 0;
+  top: 0;
+  padding-top: 8em;
+  padding-bottom: 4em;
   line-height: 4em;
 }
 
@@ -88,6 +94,7 @@ a:hover {
 .index {
   line-height: 1.8em;
   margin-top: 7em;
+  cursor: crosshair;
 }
 
 @keyframes deleting {

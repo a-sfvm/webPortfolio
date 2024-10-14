@@ -1,11 +1,8 @@
 .layoutright {
-  padding: 1em;
-}
-
-@media only screen and (min-width: 768px) {
-  /* show element on medium-sized screens */
-  .layoutright {
-    width: 300px;
-    height: 2000px;
-  }
+  margin-left: 600px;
+  padding: 8em 20px;
+  max-width: 90vh;
+  width: calc(100% - 500px);
+  /* overflow-y: auto; */
+  height: 100vh;
 }

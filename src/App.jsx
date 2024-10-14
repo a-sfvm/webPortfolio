@@ -1,12 +1,12 @@
-import LayoutLeft from "./components/LayoutLeft";
 import LayoutRight from "./components/LayoutRight";
 
-import './App.css'
+// import classes from './App.css'
+import MainInfo from "./components/MainInfo";
 
 function App() {
   return (
     <>
-      <LayoutLeft />
+      <MainInfo />
       <LayoutRight />
     </>
   )
