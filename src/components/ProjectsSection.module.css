@@ -8,3 +8,8 @@
 .image {
   width: 100%;
 }
+
+.slider {
+  width: 80%;
+  margin: 2em auto;
+}

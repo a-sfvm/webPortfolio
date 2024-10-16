@@ -14,7 +14,7 @@ const RnrCarousel = () => {
   const settings = {
     dots: true,                // Show navigation dots
     infinite: true,            // Enable infinite loop
-    speed: 800,                // Transition speed
+    speed: 900,                // Transition speed
     slidesToShow: 1,           // Show one slide at a time
     slidesToScroll: 1,         // Scroll one slide at a time
     autoplay: true,            // Enable auto sliding
@@ -23,18 +23,18 @@ const RnrCarousel = () => {
   };
 
   return (
-    <Slider {...settings}>
+    <Slider {...settings} className={classes.slider}>
       <div>
-        <img src={SurfRnR_home} alt="" className={classes.image}/>
+        <img src={SurfRnR_home} alt="SurfRnR_home" className={classes.image}/>
       </div>
       <div>
-        <img src={SurfRnR_NewBoard} alt="" className={classes.image}/>
+        <img src={SurfRnR_NewBoard} alt="SurfRnR_NewBoard" className={classes.image}/>
       </div>
       <div>
-        <img src={SurfRnR_Surfboard} alt="" className={classes.image}/>
+        <img src={SurfRnR_Surfboards} alt="SurfRnR_Surfboards" className={classes.image}/>
       </div>
       <div>
-        <img src={SurfRnR_Surfboards} alt="" className={classes.image}/>
+        <img src={SurfRnR_Surfboard} alt="SurfRnR_Surfboard" className={classes.image}/>
       </div>
     </Slider>
   )
