@@ -1,12 +1,12 @@
-import jpeeg from "../assets/SurfRnR-home.jpg"
 import classes from "./ProjectsSection.module.css"
+import RnrCarousel from "./RnrCarousel";
 
 function ProjectsSection() {
   return (
     <>
-      <h1>Some text</h1>
-      <div className={classes.imagecont}>
-      <img src={jpeeg} alt="" className={classes.image}/>
+      <div id="projects">
+        <h1 className={classes.title}>Projects</h1>
+        <RnrCarousel />
       </div>
     </>
   )

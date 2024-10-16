@@ -39,6 +39,12 @@ const MainInfo = () => {
     about.scrollIntoView({ behavior: "smooth", block: "center" });
   }
 
+  const onClickProjects = () => {
+    // window.location.href = "#projects";
+    const about = document.getElementById("projects");
+    about.scrollIntoView({ behavior: "smooth", block: "center" });
+  }
+
 
   return (
     <>
@@ -61,7 +67,7 @@ const MainInfo = () => {
         <div className={classes.index}>
           <p onClick={onClickAbout}>About</p>
           <p onClick={onClickSkills}>Skills</p>
-          <p>Projects</p>
+          <p onClick={onClickProjects}>Projects</p>
         </div>
       </div>
     </>
