@@ -34,11 +34,11 @@ const MainInfo = () => {
     const projectsPosition = document.getElementById("projects").getBoundingClientRect();
 
     // Detect if the section is in the viewport (approximately)
-    if (aboutPosition.top >= 0 && aboutPosition.top <= window.innerHeight / 2) {
+    if (aboutPosition.top >= 0 && aboutPosition.top <= window.innerHeight / 1) {
       setActiveIndex(0);
-    } else if (skillsPosition.top >= 0 && skillsPosition.top <= window.innerHeight / 2) {
+    } else if (skillsPosition.top >= 0 && skillsPosition.top <= window.innerHeight / 1) {
       setActiveIndex(1);
-    } else if (projectsPosition.top >= 0 && projectsPosition.top <= window.innerHeight / 2) {
+    } else if (projectsPosition.top >= 0 && projectsPosition.top <= window.innerHeight / 1) {
       setActiveIndex(2);
     } else {
       setActiveIndex(null); // If no section is in view

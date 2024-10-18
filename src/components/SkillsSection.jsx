@@ -9,7 +9,7 @@ import classes from './SkillsSection.module.css';
 const SkillsSection = () => {
   return (
     <>
-      <h1 id="skills" className={classes.title}>Projects</h1>
+      <h1 id="skills" className={classes.title}>Skills</h1>
       <div className={classes.iconGrid}>
         <div className={classes.iconItem}><DiRuby size={30} />
           <p className={classes.name}>RUBY</p>
