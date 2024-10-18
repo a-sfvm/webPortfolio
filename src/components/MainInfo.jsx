@@ -8,6 +8,7 @@ import { FaLinkedin } from "react-icons/fa6";
 const MainInfo = () => {
   const [animate, setAnimate] = useState(false);
   const [text, setText] = useState("<h2>Web Developer.</h2>");
+  const [activeIndex, setActiveIndex] = useState(null);
 
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -27,24 +28,37 @@ const MainInfo = () => {
     }
   }, [animate]);
 
-  const onClickAbout = () => {
-    // window.location.href = "#about";
-    const about = document.getElementById("about");
-    about.scrollIntoView({ behavior: "smooth", block: "start", inline: "nearest" });
-  }
+  const handleScroll = () => {
+    const aboutPosition = document.getElementById("about").getBoundingClientRect();
+    const skillsPosition = document.getElementById("skills").getBoundingClientRect();
+    const projectsPosition = document.getElementById("projects").getBoundingClientRect();
 
-  const onClickSkills = () => {
-    // window.location.href = "#skills";
-    const about = document.getElementById("skills");
-    about.scrollIntoView({ behavior: "smooth", block: "center" });
-  }
+    // Detect if the section is in the viewport (approximately)
+    if (aboutPosition.top >= 0 && aboutPosition.top <= window.innerHeight / 2) {
+      setActiveIndex(0);
+    } else if (skillsPosition.top >= 0 && skillsPosition.top <= window.innerHeight / 2) {
+      setActiveIndex(1);
+    } else if (projectsPosition.top >= 0 && projectsPosition.top <= window.innerHeight / 2) {
+      setActiveIndex(2);
+    } else {
+      setActiveIndex(null); // If no section is in view
+    }
+  };
 
-  const onClickProjects = () => {
-    // window.location.href = "#projects";
-    const about = document.getElementById("projects");
-    about.scrollIntoView({ behavior: "smooth", block: "center" });
-  }
+  // Attach scroll event listener
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
 
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
+  const onClickSection = (sectionId, index) => {
+    const section = document.getElementById(sectionId);
+    section.scrollIntoView({ behavior: "smooth", block: "start" });
+    setActiveIndex(index); // Set the active index when clicked
+  };
 
   return (
     <>
@@ -65,9 +79,24 @@ const MainInfo = () => {
           </a>
         </div>
         <div className={classes.index}>
-          <p onClick={onClickAbout}>About</p>
-          <p onClick={onClickSkills}>Skills</p>
-          <p onClick={onClickProjects}>Projects</p>
+          <p
+            onClick={() => onClickSection("about", 0)}
+            className={activeIndex === 0 ? classes.active : ""}
+          >
+            About
+          </p>
+          <p
+            onClick={() => onClickSection("skills", 1)}
+            className={activeIndex === 1 ? classes.active : ""}
+          >
+            Skills
+          </p>
+          <p
+            onClick={() => onClickSection("projects", 2)}
+            className={activeIndex === 2 ? classes.active : ""}
+          >
+            Projects
+          </p>
         </div>
       </div>
     </>

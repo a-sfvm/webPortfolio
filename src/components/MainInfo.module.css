@@ -93,6 +93,13 @@ a:hover {
   line-height: 1.8em;
   margin-top: 7em;
   cursor: crosshair;
+  color: rgb(76, 76, 76);
+}
+
+.active {
+  font-weight: bold;
+  color: rgb(0, 0, 0);
+  text-decoration: underline;
 }
 
 @keyframes deleting {

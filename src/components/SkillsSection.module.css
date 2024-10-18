@@ -1,3 +1,11 @@
+.title {
+  font-family: Afacad Flux;
+  font-weight: 700;
+  font-size: 1.5em;
+  padding-top: 2em;
+  border-bottom: 0.1em solid rgb(37, 37, 37);
+}
+
 .iconGrid {
   margin-top: 9em;
   margin-bottom: 9em;
