@@ -17,9 +17,9 @@
 
 .project {
   margin-top: 3em;
-  border: 1px solid rgb(37, 37, 37);
+  border: 0.1em solid rgb(76, 76, 76);
   border-radius: 8px;
-  padding: 1.3em;
+  padding-bottom: 1em;
 }
 
 .icon {
@@ -48,7 +48,8 @@
 
 .tools {
   text-align: center;
-  margin: 1em auto;
+  margin-top: 2em;
+  margin-bottom: 1em;
 }
 
 .tool {
