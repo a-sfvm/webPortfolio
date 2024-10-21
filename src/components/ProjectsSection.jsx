@@ -31,7 +31,7 @@ function ProjectsSection() {
             <a href="https://github.com/daCunhaFerreira/SURF_RnR" target="_blank">
               <h4 className={classes.projectName}>Surf RnR  <IoArrowForwardOutline className={classes.icon}/></h4>
             </a>
-            <p className={classes.description}>Final project for the LeWagon Bootcamp. Web application that sends real-time alerts based on surf conditions in Portugal, thanks to a collaboration with the AI team analyzing surf webcams.</p>
+            <p className={classes.description}></p>
             <div className={classes.tools}>
               <span className={classes.tool}>Ruby on Rails</span>
               <span className={classes.tool}>JavaScript</span>
