@@ -3,13 +3,9 @@ import Slider from 'react-slick';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-// import Surfbuddy_Home from "../assets/Project_photos/Surfbuddy_Home.png"
-import Surfbuddy_HomeAndFeed from "../assets/Project_photos/Surfbuddy_HomeAndFeed.png"
-import Surfbuddy_SpotAndPost from "../assets/Project_photos/Surfbuddy_SpotAndPost.png"
-// import Surfbuddy_MyFeed from "../assets/Project_photos/Surfbuddy_MyFeed.png"
-// import Surfbuddy_Post from "../assets/Project_photos/Surfbuddy_Post.png"
-// import Surfbuddy_SurfSpot from "../assets/Project_photos/Surfbuddy_SurfSpot.png"
-import Surfbuddy_Search from "../assets/Project_photos/Surfbuddy_Search.png"
+import Surfbuddy_HomeAndFeed from "../assets/Project_photos/SurfBuddy_HomeAndFeed.png"
+import Surfbuddy_SpotAndPost from "../assets/Project_photos/SurfBuddy_SpotAndPost.png"
+import Surfbuddy_Search from "../assets/Project_photos/SurfBuddy_Search.png"
 
 import classes from "./ProjectsSection.module.css"
 
