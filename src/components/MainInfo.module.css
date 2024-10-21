@@ -90,11 +90,14 @@ a:hover {
 }
 
 .index {
+  font-family: Afacad Flux;
+  font-weight: 700;
   line-height: 1.8em;
   margin-top: 7em;
   cursor: crosshair;
   color: rgb(100, 100, 100);
   margin-left: 350px;
+  font-size: 1.1em;
 }
 
 .active {

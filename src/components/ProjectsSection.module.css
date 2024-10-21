@@ -3,7 +3,7 @@
   font-weight: 700;
   font-size: 1.5em;
   padding-top: 2em;
-  border-bottom: 0.1em solid rgb(37, 37, 37);
+  border-bottom: 1px solid rgb(37, 37, 37);
 }
 
 .image {
@@ -13,4 +13,49 @@
 .slider {
   width: 80%;
   margin: 2em auto;
+}
+
+.project {
+  margin-top: 3em;
+  border: 1px solid rgb(37, 37, 37);
+  border-radius: 8px;
+  padding: 1.3em;
+}
+
+.icon {
+  transform: rotate(-45deg);
+}
+
+.projectName {
+  color: rgb(76, 76, 76);
+  margin: 0.5em auto;
+  font-size: 1.1em;
+  font-style: italic;
+  transition: .2s;
+  width: fit-content;
+}
+
+.projectName:hover {
+  font-weight: bold;
+  color: #367E89;
+}
+
+.description {
+  text-align: center;
+  width: 80%;
+  margin: 1em auto;
+}
+
+.tools {
+  text-align: center;
+  margin: 1em auto;
+}
+
+.tool {
+  font-family: Afacad Flux;
+  border: 0.1em solid rgb(76, 76, 76);
+  border-radius: 5px;
+  margin: 0em 0.5em;
+  padding: 0.2em 0.2em;
+  color: rgb(76, 76, 76);
 }
