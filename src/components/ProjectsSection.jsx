@@ -31,7 +31,7 @@ function ProjectsSection() {
             <a href="https://github.com/daCunhaFerreira/SURF_RnR" target="_blank">
               <h4 className={classes.projectName}>Surf RnR  <IoArrowForwardOutline className={classes.icon}/></h4>
             </a>
-            <p className={classes.description}>Clone of Airbnb</p>
+            <p className={classes.description}>A web app (cloning Airbnb) where users can rent surfboards from local owners wherever they may be.</p>
             <div className={classes.tools}>
               <span className={classes.tool}>Ruby on Rails</span>
               <span className={classes.tool}>JavaScript</span>

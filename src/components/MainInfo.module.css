@@ -13,7 +13,6 @@
 .title {
   font-family: Fraunces;
   font-style: italic;
-  font-style: italic;
   font-size: 4em;
   margin: 0 0 0 1em;
 }
@@ -47,7 +46,7 @@ a {
   padding: 0 0 0 0;
   margin: 0 0 0 0;
   color: rgb(76, 76, 76);
-  cursor: crosshair;
+  cursor: alias;
   margin-left: 0.7em;
 }
 
