@@ -133,3 +133,19 @@ a:hover {
     border-color: black;
   }
 }
+
+@media screen and (max-width: 480px) {
+  .index{
+    display: none;
+  }
+
+  .container {
+    width: auto;
+    height: auto;
+    text-align: center;
+    position: static;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    line-height: 4em;
+  }
+}
