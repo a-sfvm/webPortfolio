@@ -10,18 +10,8 @@
   border-bottom: 1px solid rgb(37, 37, 37);
 }
 
-.text {
+/* .text {
   display: flex;
   flex-direction: column;
   padding: 0.2em;
-}
-
-.pOne {
-  width: 500px;
-}
-
-.pTwo {
-  width: 500px;
-  align-self: flex-end;
-}
-
+} */

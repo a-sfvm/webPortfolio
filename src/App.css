@@ -1,4 +1,7 @@
 .layout {
   display: flex;
   height: 100vh;
+  align-content: center;
+  flex-wrap: wrap;
+  flex-direction: column;
 }
