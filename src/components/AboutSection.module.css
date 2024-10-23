@@ -5,8 +5,6 @@
 .title {
   font-family: Afacad Flux;
   font-weight: 700;
-  /* font-style: italic; */
-  /* padding-left: 1em; */
   font-size: 1.5em;
   padding-top: 2em;
   border-bottom: 1px solid rgb(37, 37, 37);
@@ -26,3 +24,4 @@
   width: 500px;
   align-self: flex-end;
 }
+
